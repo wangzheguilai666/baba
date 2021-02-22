@@ -16,6 +16,11 @@ namespace WebApplication31_Core_demo.Controllers
         private readonly ILogger<HomeController> _logger;
         //IConfiguration _Configuration;
 
+        //jasdja8747
+
+
+
+
         //构造函数注入
         //1.写接口
         IStudent _IStudent;
