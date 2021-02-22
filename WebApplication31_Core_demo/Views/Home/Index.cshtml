@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using DataModel
+@model List<Student>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div>
+    <table>
+        <tr>
+            <td>编号</td>
+            <td>姓名</td>
+            <td>年龄</td>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.SId</td>
+                <td>@item.SName</td>
+                <td>@item.SAge</td>
+            </tr>
+        }
+    </table>
+</div>
